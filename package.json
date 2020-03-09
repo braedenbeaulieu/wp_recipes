@@ -1,0 +1,36 @@
+{
+	"name": "wp_recipes",
+	"version": "1.0.0",
+	"devDependencies": {
+		"bootstrap": "4.3.1",
+		"gulp": "3.9.1",
+		"gulp-changed": "3.2.0",
+		"gulp-clean-css": "4.0.0",
+		"gulp-concat": "2.6.1",
+		"gulp-rename": "1.4.0",
+		"gulp-sass": "4.0.2",
+		"gulp-sourcemaps": "2.6.5",
+		"gulp-uglify": "3.0.2",
+		"gulp-uglify-es": "2.0.0",
+		"gulp-util": "3.0.8",
+		"vinyl-ftp": "0.6.1"
+	},
+    "sourceFiles": [
+        "src/**/*.eot",
+        "src/**/*.gif",
+        "src/**/*.html",
+        "src/**/*.htm",
+        "src/**/*.json",
+        "src/**/*.jpg",
+        "src/**/*.md",
+        "src/**/*.otf",
+        "src/**/*.php",
+        "src/**/*.png",
+        "src/**/*.svg",
+        "src/**/*.ttf",
+        "src/**/*.txt",
+        "src/**/*.woff",
+        "src/**/*.woff2",
+        "src/**/style.css"
+    ]
+}

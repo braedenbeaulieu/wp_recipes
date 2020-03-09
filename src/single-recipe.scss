@@ -1,0 +1,44 @@
+.single-recipe {
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .list {
+        margin-bottom: 30px;
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            p {
+                margin-right: 15px;
+            }
+
+            .number {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 1px solid black;
+                min-width: 40px;
+                height: 40px;
+                margin-right: 15px;
+
+                p {
+                    margin-right: 0;
+                }
+            }
+        }
+    }   
+}
