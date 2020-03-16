@@ -1,0 +1,27 @@
+.rp-made-it-popup {
+    position: fixed;
+    top: -400px;
+    width: 100vw;
+    max-width: calc(450px - 60px);
+    height: 300px;
+    z-index: 5;
+    opacity: 0;
+    transition: all .3s;
+
+    .popup-inner {
+        background: #333;
+        @include font-family;
+        margin: 260px 20px 20px;
+        padding: 10px;
+        border-radius: 5px;
+
+        p {
+            color: white;
+        }
+    }
+
+    &.open {
+        top: 0px;
+        opacity: 1;
+    }
+}

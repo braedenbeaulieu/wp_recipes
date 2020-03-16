@@ -13,13 +13,13 @@ var pkg = require('./package.json'),
     uglify = require('gulp-uglify-es').default;
 
 //Create FTP connection
-// var conn = ftp.create({
-//     host: secrets.ftphost,
-//     user: secrets.ftpusername,
-//     password: secrets.ftppassword,
-//     parallel: 5,
-// 	log: gutil.log
-// });
+var conn = ftp.create({
+    host: secrets.ftphost,
+    user: secrets.ftpusername,
+    password: secrets.ftppassword,
+    parallel: 5,
+	log: gutil.log
+});
 
 var development = pkg.environment != 'production';
 
@@ -53,6 +53,7 @@ gulp.task('stylesheets', function() {
         compileSass = compileSass.pipe(sourcemaps.write());
 
     compileSass.pipe(gulp.dest('./dist/css'));
+    // compileSass.pipe(conn.dest(secrets.ftppath + '/css'));
 });
 
 gulp.task('javascript', function() {

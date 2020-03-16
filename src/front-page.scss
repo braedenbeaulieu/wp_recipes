@@ -1,5 +1,61 @@
 .front-page {
-    h1 {
-        font-size: 23px;
+    .rp-section {
+        .rp-recipe-list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 15px 0;
+          
+            a > div {
+                flex: 0 0 auto;
+            }
+    
+            a {
+                min-width: 230px;
+                margin: 0 10px;
+    
+                &:first-of-type {
+                    // margin-left: 10px;
+                }
+        
+                &:last-of-type {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .rp-category-list {
+            display: grid;
+            grid-template-columns: repeat(2, calc(50% - 10px));
+            column-gap: 20px;
+
+            &> a {
+                .rp-category {
+                    background: $coral;
+                    height: 60px;
+                    border-radius: 5px;
+                    position: relative;
+                    margin-bottom: 20px;
+
+                    .underlay {
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: linear-gradient(45deg, rgba(0, 0, 0, .33), transparent);
+
+                        h3 {
+                            color: white;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

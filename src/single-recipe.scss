@@ -1,27 +1,124 @@
 .single-recipe {
-    h1 {
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 40px;
+
+    .rp-recipe-thumbnail {
+        position: relative;
+        // margin-bottom: 30px;
+        overflow: hidden;
+        //padding-bottom: 30px;
+
+        .image-cover-container {
+            height: 275px;
+        }
+
+        .underlay {
+            height: 120px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .9), transparent);
+            padding-bottom: 30px;
+
+            h1 {
+                color: white;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .top-radius {
+        border-radius: 20px 20px 0 0;
+        //padding-top: 30px;
+        margin-top: -18px;
+        position: relative;
+        z-index: 4;
+        overflow: hidden;
+        background: $background;
     }
 
     h2 {
         font-size: 26px;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        // border-bottom: 1px solid rgba(0, 0, 0, .1);
+        margin-bottom: 10px;
+    }
+
+    .rp-recipe-meta {
+        width: 100%;
         margin-bottom: 20px;
-        padding-bottom: 10px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .times {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            p {
+                margin-right: 15px;
+                font-size: 12px;
+                font-weight: 500;
+                opacity: .7;
+                margin-bottom: 4px;
+            }
+        }
+
+
+
+        .i_made_it {
+            // background: red;
+            // width: 75px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            background-color: $blue;
+            color: white;
+            
+            
+            p {
+                padding: 7px;
+                color: white;
+            }
+
+            .rating {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-left: 1px solid rgba(0, 0, 0, .1);
+                color: white;
+
+                img {
+                    height: 20px;
+                    padding-right: 7px;
+                }
+            }
+
+            &.yes {
+                background: $coral;
+                cursor: default;
+            }
+        }
     }
 
     .list {
-        margin-bottom: 30px;
-
         .list-item {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
 
             p {
-                margin-right: 15px;
+                line-height: 1.7;
             }
 
             .number {

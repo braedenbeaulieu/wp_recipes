@@ -2,3 +2,25 @@ $breakpoint-sm: 640px;
 $breakpoint-md: 960px;
 $breakpoint-lg: 1200px;
 $breakpoint-xl: 1600px;
+
+$max-width: 90%;
+
+$background: #ececec;//rgba(0, 0, 0, .95);
+$background-panel: #252525;
+$coral: #E94F64;
+$blue: #468CDE;
+$text-colour: #333;
+
+
+@mixin box-shadow {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .4);
+}
+
+@mixin font-family {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin rp-container-width {
+    max-width: $max-width;
+    padding: 0 5%;
+}
